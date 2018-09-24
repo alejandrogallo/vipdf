@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+
+SCRIPT_DIR=$(dirname $0)
+
+pdffile=$1
+vim -S ${SCRIPT_DIR}/pdfreader.vim -c 'let g:pdf_path = "'$pdffile'"'
